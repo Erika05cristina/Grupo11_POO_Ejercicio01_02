@@ -12,13 +12,13 @@ public class Grupo11_POO_Ejercicio01_02 {
 
     public static void main(String[] args) {
 
-        var lim1 = 100.0d;
-        var lim2 = 300.0d;
-        var lim3 = 500.0d;
+        var lim1 = 100;
+        var lim2 = 300;
+        var lim3 = 500;
 
         var empleado1 = new Empleado();
         empleado1.nombre = "Juan";
-        empleado1.costoHora = 1.77;
+        empleado1.costoHora = 2.50;
         empleado1.horasTrabajadas = 160;
         empleado1.yearIngreso = 2019;
 
@@ -28,11 +28,11 @@ public class Grupo11_POO_Ejercicio01_02 {
         System.out.println("El empleado gana $" + empleado1.calcularIngreso(2022));
         System.out.println("El empleado tiene un bono $" + empleado1.bonosHorasExtra());
         System.out.println("Los impuestos son $" + empleado1.calculaImpuesto(lim1, lim2, lim3));
-        System.out.println("El total es de $" + empleado1.calcularTotal());
+        System.out.println("El total es de $" + empleado1.calcularTotal(2022, lim1, lim2, lim3));
 
         var empleado2 = new Empleado();
         empleado2.nombre = "Alberto";
-        empleado2.costoHora = 1.77;
+        empleado2.costoHora = 1.50;
         empleado2.horasTrabajadas = 180;
         empleado2.yearIngreso = 2019;
         System.out.println("\nEl empleado llamado " + empleado2.nombre
@@ -41,7 +41,7 @@ public class Grupo11_POO_Ejercicio01_02 {
         System.out.println("El empleado gana $" + empleado2.calcularIngreso(2022));
         System.out.println("El empleado tiene un bono $" + empleado2.bonosHorasExtra());
         System.out.println("Los impuestas son $" + empleado2.calculaImpuesto(lim1, lim2, lim3));
-        System.out.println(" El total es de $" + empleado2.calcularTotal());
+        System.out.println(" El total es de $" + empleado2.calcularTotal(2022, lim1, lim2, lim3));
         
          var empleado3 = new Empleado();
         empleado3.nombre = "Cesar";
@@ -55,7 +55,7 @@ public class Grupo11_POO_Ejercicio01_02 {
         System.out.println("El empleado gana $" + empleado3.calcularIngreso(2022));
         System.out.println("El empleado tiene un bono $" + empleado3.bonosHorasExtra());
         System.out.println("Los impuestos son $" + empleado3.calculaImpuesto(lim1, lim2, lim3));
-        System.out.println("El total es de $" + empleado3.calcularTotal());
+        System.out.println("El total es de $" + empleado3.calcularTotal(2022, lim1, lim2, lim3));
 
     }
 }

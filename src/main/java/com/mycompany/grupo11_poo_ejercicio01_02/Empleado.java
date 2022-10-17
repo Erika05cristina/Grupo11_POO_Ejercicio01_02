@@ -14,6 +14,7 @@ public class Empleado {
     int horasTrabajadas;
     double costoHora;
     int yearIngreso;
+    
 
     public double calcularIngreso(int yearActual) {
 
@@ -81,15 +82,15 @@ public class Empleado {
         return retorno;
     }
     
-    public double calcularTotal(){
+    public double calcularTotal(int yearActual, int lim1, int lim2, int lim3){
         
         var total = 0.0d;
         
-        total = calcularIngreso(2022) + bonosHorasExtra() +
-                calculaImpuesto( 100, 300, 500);
+        total = calcularIngreso(yearActual) + bonosHorasExtra() +
+                calculaImpuesto( lim1, lim2, lim3);
         
         return total;
     }
             
-          
+    
 }
